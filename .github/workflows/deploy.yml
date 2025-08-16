@@ -19,6 +19,20 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_ID }}
         aws-region: ${{ secrets.AWS_REGION }}
+    
+    - name: Debug - Voir la structure complète
+      run: |
+        echo "=== Contenu à la racine ==="
+        ls -la
+        echo ""
+        echo "=== Arborescence complète ==="
+        find . -type d -name "*portfolio*" 2>/dev/null || echo "Aucun dossier contenant 'portfolio' trouvé"
+        echo ""
+        echo "=== Tous les dossiers ==="
+        find . -maxdepth 2 -type d
+        echo ""
+        echo "=== Fichiers HTML/CSS/JS ==="
+        find . -name "*.html" -o -name "*.css" -o -name "*.js" | head -10
 
     - name: Sync files to S3
       run: |
