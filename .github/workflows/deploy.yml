@@ -22,7 +22,7 @@ jobs:
 
     - name: Sync files to S3
       run: |
-        aws s3 sync ./portfolio/ s3://mon-portfolio-2025 --delete
+        aws s3 sync ./mon-portfolio/ s3://mon-portfolio-2025 --delete
 
     - name: Invalidate CloudFront cache
       run: |
