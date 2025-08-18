@@ -1,58 +1,201 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ousmane Sarr Diop — Portfolio Cloud & DevSecOps</title>
-  <meta name="description" content="Portfolio d’Ousmane Sarr Diop — Étudiant M1 ARIAS (Orléans). Projets cloud-native (AWS S3/CloudFront), DevSecOps, algorithmique Java/Python/C, APIs REST, bases de données, et CI/CD.">
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Ousmane Sarr Diop — Portfolio Cloud & DevSecOps" />
-  <meta property="og:description" content="Projets cloud-native (AWS), DevSecOps, algorithmique, APIs, CI/CD." />
-  <meta property="og:image" content="assets/images/og-image.jpg" />
-  <meta property="og:url" content="https://exemple.com" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Styles externes -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="assets/images/favicon.ico" />
-  <meta name="theme-color" content="#0f172a" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ousmane Sarr Diop - DevSecOps & Cloud</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="sr-only" href="#content">Aller au contenu</a>
-
-  <!-- HERO / HEADER -->
-  <header class="hero">
-    <div class="container hero-inner">
-      <div>
-        <span class="pill">Portefeuille · Cloud / DevSecOps / Backend</span>
-        <h1>Ousmane Sarr Diop</h1>
-        <p class="lead">Étudiant <strong>M1 ARIAS</strong> (Université d’Orléans) — en recherche d’alternance <strong>DevSecOps / Cloud</strong> pour septembre 2025...</p>
-        <div class="links btn-row">
-          <a class="cta" href="mailto:ousmanesarrd@gmail.com">✉️ Me contacter</a>
-          <a class="ghost" href="tel:+33626041314">📱 +33 6 26 04 13 14</a>
-          <a class="ghost" href="https://github.com/Ousmane-D-03" target="_blank">GitHub</a>
-          <a class="ghost" href="https://www.linkedin.com/in/ousmane-sarr-diop-505891278" target="_blank">LinkedIn</a>
-          <a class="ghost" href="cv.pdf" target="_blank">Télécharger CV (PDF)</a>
+    <header>
+        <div class="container">
+            <h1>Ousmane Sarr Diop</h1>
+            <p>DevSecOps & Cloud Engineer</p>
+            <div class="contact-info">
+                <a href="mailto:ousmanesarrd@gmail.com"> ousmanesarrd@gmail.com</a>
+                <a href="tel:+33626041314"> +33 6 26 04 13 14</a>
+                <a href="https://github.com/Ousmane-D-03"> GitHub</a>
+                <a href="https://linkedin.com/in/ousmane-sarr-diop-505891278">💼 LinkedIn</a>
+            </div>
         </div>
-      </div>
-      <div>
-        <div class="avatar" style="background-image:url('assets/images/photo.jpg');"></div>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <main id="content" class="container">
-    <!-- ... mêmes sections que la version précédente (compétences, expériences, projets, formation, contact) ... -->
-  </main>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#profil" onclick="scrollToSection('profil')">Profil</a></li>
+                <li><a href="#competences" onclick="scrollToSection('competences')">Compétences</a></li>
+                <li><a href="#projets" onclick="scrollToSection('projets')">Projets</a></li>
+                <li><a href="#formation" onclick="scrollToSection('formation')">Formation</a></li>
+                <li><a href="#experience" onclick="scrollToSection('experience')">Expérience</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <footer>
-    <div class="container">
-      <small>© <span id="year"></span> Ousmane Sarr Diop — Fait avec ♥, HTML/CSS/JS, hébergé sur AWS S3 + CloudFront.</small>
-    </div>
-  </footer>
+    <section id="profil">
+        <div class="container">
+            <h2>Profil</h2>
+            <p style="font-size: 1.1rem; line-height: 1.8; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                Étudiant en Master 1 ARIAS (Applications Réparties, IA et Sécurité) à l'Université d'Orléans, 
+                je recherche une <strong>alternance DevSecOps/Cloud pour septembre 2025</strong>. 
+                Solide expérience en développement algorithmique et bases de données, 
+                actuellement en formation AWS (certification Cloud Practitioner en cours).
+            </p>
+        </div>
+    </section>
 
-  <script src="js/script.js"></script>
+    <section id="competences">
+        <div class="container">
+            <h2>Compétences Techniques</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Langages Maîtrisés</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Bases de Données</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Outils & Environnements</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">IntelliJ IDEA</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>En Apprentissage</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">PHP/Laravel</span>
+                        <span class="skill-tag">Vue.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" style="background: white;">
+        <div class="container">
+            <h2>Projets Techniques</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>API de Traduction Serverless</h3>
+                    <p>API REST Python/Lambda avec intégration DeepL, déploiement AWS, gestion des clés d'authentification.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">AWS Lambda</span>
+                        <span class="tech-tag">DeepL API</span>
+                        <span class="tech-tag">REST</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Portfolio Personnel</h3>
+                    <p>Déploiement automatisé sur AWS S3/CloudFront avec CI/CD GitHub Actions.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">AWS S3</span>
+                        <span class="tech-tag">CloudFront</span>
+                        <span class="tech-tag">GitHub Actions</span>
+                        <span class="tech-tag">CI/CD</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>CMS Groupe Trust</h3>
+                    <p>Développement complet d'un CMS pour entreprise de conseil avec architecture MVC et interface responsive.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">PHP 8.1</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Bootstrap 5</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Maze Solver</h3>
+                    <p>Implémentation d'algorithmes de parcours optimisés (DFS, BFS, A*) en C.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">Algorithmes</span>
+                        <span class="tech-tag">DFS/BFS</span>
+                        <span class="tech-tag">A*</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Compilateur OCaml</h3>
+                    <p>Développement complet : analyse lexicale, syntaxique, génération de code assembleur.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">OCaml</span>
+                        <span class="tech-tag">Compilation</span>
+                        <span class="tech-tag">Assembleur</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formation">
+        <div class="container">
+            <h2>Formation</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Sept. 2024 – Présent</div>
+                    <h3>Master ARIAS – Applications Réparties, IA et Sécurité (M1)</h3>
+                    <p><strong>Université d'Orléans</strong> - Orléans, France</p>
+                    <p>Focus : Systèmes distribués, cybersécurité, intelligence artificielle</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 – 2024</div>
+                    <h3>Licence Informatique</h3>
+                    <p><strong>Université de Bordeaux</strong> - Bordeaux, France</p>
+                    <p>Spécialisations : Algorithmique avancée, compilation, systèmes d'exploitation, développement web</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" style="background: white;">
+        <div class="container">
+            <h2>Expérience Professionnelle</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2025</div>
+                    <h3>Développeur Full-Stack – Groupe Trust (Sénégal)</h3>
+                    <p>Développement d'un CMS complet pour entreprise de conseil</p>
+                    <ul style="margin-top: 1rem; padding-left: 2rem;">
+                        <li>Backend : Laravel/PHP 8.1, MySQL, API REST, authentification sécurisée</li>
+                        <li>Frontend : HTML5, CSS3, JavaScript, Bootstrap 5, interface responsive</li>
+                        <li>Architecture MVC, gestion dynamique du contenu, optimisation SEO</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Oct. 2022 – Présent</div>
+                    <h3>Tuteur particulier – Indépendant</h3>
+                    <p>Cours de mathématiques, physique et chimie (niveau lycée)</p>
+                    <p>Pédagogie et adaptation aux besoins des étudiants</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ousmane Sarr Diop - Tous droits réservés</p>
+            <p>Recherche alternance DevSecOps/Cloud - Septembre 2025</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
